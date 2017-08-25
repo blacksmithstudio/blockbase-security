@@ -1,0 +1,17 @@
+{
+  "name": "@blacksmithstudio/blockbase-security",
+  "version": "0.0.1",
+  "description": "blockbase driver for Security purposes",
+  "main": "driver.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org:blacksmithstudio/driver-security.git"
+  },
+  "author": "Alexandre Pereira <alex@blacksmith.studio>",
+  "license": "MIT",
+  "dependencies": {
+  }
+}
