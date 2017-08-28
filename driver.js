@@ -10,7 +10,7 @@ const CryptoJS = require('crypto-js')
  */
 module.exports = (app) => {
     if(!app.config.has('cryptokey'))
-        return app.drivers.logger.error('Drivers', 'Cannot init authenticator, no valid config')
+        return app.drivers.logger.error('Drivers', 'Cannot init security driver, no valid config')
 
     return {
         /**
