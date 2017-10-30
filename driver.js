@@ -21,7 +21,7 @@ module.exports = (app) => {
         if(req.headers['authorization'])
             return req.headers['authorization'].split('Bearer ')[1]
 
-        if(req.session && res.session.token)
+        if(req.session && req.session.token)
             return req.session.token
 
         return null

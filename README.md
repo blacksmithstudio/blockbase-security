@@ -2,7 +2,7 @@
 Compatible with Blockbase Framework
 
 ### Version
-0.0.4 alpha
+0.0.5 alpha
 
 ### How to install ?
 Security driver is really easy to use, first install it as any Blockbase driver.
