@@ -12,6 +12,21 @@ module.exports = (app) => {
     if(!app.config.has('cryptokey'))
         return app.drivers.logger.error('Drivers', 'Cannot init security driver, no valid config')
 
+    /**
+     * extract token from an express res variable
+     * @param {object} req - req from express
+     * @returns {string|null} token or null
+     */
+    function extractToken(req){
+        if(req.headers['authorization'])
+            return req.headers['authorization'].split('Bearer ')[1]
+
+        if(req.session && res.session.token)
+            return req.session.token
+
+        return null
+    }
+
     return {
         /**
          * request processing sub methods (with express)
@@ -30,7 +45,7 @@ module.exports = (app) => {
             authenticable(req, res, strict = false){
                 if(!req.data)
                     req.data = {
-                        token : req.headers['authorization'] ? req.headers['authorization'].split('Bearer ')[1] : null
+                        token : extractToken(req)
                     }
 
                 if(!req.data.token && strict){
