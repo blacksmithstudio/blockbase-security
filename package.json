@@ -1,5 +1,5 @@
 {
-  "name": "@blacksmithstudio/blockbase-security",
+  "name": "blockbase-security",
   "version": "0.0.6",
   "description": "blockbase driver for Security purposes",
   "main": "driver.js",
