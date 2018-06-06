@@ -1,6 +1,6 @@
 {
   "name": "blockbase-security",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "blockbase driver for Security purposes",
   "main": "driver.js",
   "scripts": {
