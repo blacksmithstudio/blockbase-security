@@ -14,10 +14,11 @@ $ npm i --save blockbase-security
 ### Usage
 TODO
 
+
 License
 ----
-
-(Copyright) 2017 - Alexandre Pereira for Blacksmith S.A.S.
+(Licence [MIT](https://github.com/blacksmithstudio/blockbase-express/blob/master/LICENCE))
+Coded by [Blacksmith](https://www.blacksmith.studio)
 
 
 **Free Software, Hell Yeah!**
