@@ -8,7 +8,7 @@ Compatible with Blockbase Framework
 Security driver is really easy to use, first install it as any Blockbase driver.
 
 ```shell
-$ npm i --save @blacksmithstudio/blockbase-security
+$ npm i --save blockbase-security
 ```
 
 ### Usage
